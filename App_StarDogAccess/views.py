@@ -7,7 +7,7 @@ import rdflib
 # Create your views here.
 def index(request):
 
-    """write data into sht stardog"""
+    """ write  data  into  shtstardog """
     # Define the Stardog store
     endpoint = 'http://123.206.66.105:5820/myDB/query'
     store = sparqlstore.SPARQLUpdateStore()
