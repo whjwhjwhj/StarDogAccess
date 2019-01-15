@@ -7,12 +7,11 @@ import json
 def MeasurementData(request):
     if request.method == 'POST':
         print('weihaijun are in POST request')
-        json_results =  HttpRequest.POST
-        print(json_results)
-        # datas = json.load(json_results)
-        #
-        # for data in datas:
-        #     print(data)
+
+        datas = json.loads(HttpRequest.body)
+
+        for key,value in datas.items():
+            print(key,value)
 
         return HttpResponse(request)
 
